@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'FenomenSans';
+            src: url('FenomenSans-SCNRegular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'IsraRegular';
+            src: url('Isra\ Regular.ttf') format('truetype');
+        }
+
+        * {
+            box-sizing: border-box;
+            padding-top: 5px;
+            margin: 0;
+        }
+
+        body {
+            margin: auto;
+            max-width: 900px;
+            width: 100%;
+            height: 100vh;
+            background-image: url(IMG_3314.JPG);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            font-style: 'IsraRegular';
+            background-color: #4C4C4C; 
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar div a {
+            color: white; 
+            text-decoration: none; 
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .main {
+            font-family: 'FenomenSans';
+            text-align: center; 
+            padding: 20px;
+            background-color: #0B4282;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main h1,h2,p {
+            color: #ffff;
+        }
+
+        .main p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .tblekstra {
+            color: #ffff;
+        text-align: center; 
+        }
+
+        .tblekstra table {
+            
+            margin: auto;
+            border-collapse: collapse; 
+        }
+
+        .daftarekstra img{
+
+            width: 300px;
+            height: 200px;
+
+        }
+
+        .daftarekstra {
+            margin-top: 32px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div style="color: white; font-size: 20px;">SMK Negeri 1 Sukawati | Ekstra</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Daftar</a>
+            <a href="#">Kontak</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h1>EKSTRA KULIKULER</h1>
+        <h2>SMK Negeri 1 Sukawati</h2>
+        <br>
+        <p>Ekstrakurikuler adalah kegiatan di luar jam pelajaran sekolah yang bertujuan untuk mengembangkan 
+            minat, bakat, keterampilan, dan kepribadian siswa. Kegiatan ini biasanya bersifat non-akademis 
+            dan dilakukan di bawah bimbingan guru atau pelatih yang berpengalaman.</p>
+        
+            <br>
+            <br>
+            <br>
+
+        <div class="tblekstra">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nama Ekstra</th>
+                        <th>Jadwal Hari Ekstra</th>
+                        <th>Jumlah Anggota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pramuka</td>
+                        <td>Jumat</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Paskibra</td>
+                        <td>Sabtu</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Basket</td>
+                        <td>Senin & Rabu</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Volly</td>
+                        <td>Selasa & Kamis</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Teater</td>
+                        <td>Minggu</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+  
+        </div>
+
+        <div class="daftarekstra">
+
+        <img src="gambar1.png" alt="Contoh Gambar" align="left">
+        <p>
+            Ini adalah contoh paragraf yang berada di samping gambar. Kamu dapat menulis teks sepanjang yang kamu inginkan di sini. Atribut <code>align="left"</code> membuat gambar berada di kiri dan teks di sebelah kanannya. Namun, cara ini sudah usang dan tidak disarankan digunakan lagi.
+        </p>
+
+        </div>
+
+    </div>
+</body>
+</html>
