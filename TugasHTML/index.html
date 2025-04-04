@@ -4,96 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @font-face {
-            font-family: 'FenomenSans';
-            src: url('FenomenSans-SCNRegular.ttf') format('truetype');
-        }
-
-        @font-face {
-            font-family: 'IsraRegular';
-            src: url('Isra\ Regular.ttf') format('truetype');
-        }
-
-        * {
-            box-sizing: border-box;
-            padding-top: 5px;
-            margin: 0;
-        }
-
-        body {
-            margin: auto;
-            max-width: 900px;
-            width: 100%;
-            height: 100vh;
-            background-image: url(IMG_3314.JPG);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .navbar {
-            font-style: 'IsraRegular';
-            background-color: #4C4C4C; 
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar div a {
-            color: white; 
-            text-decoration: none; 
-            margin: 0 10px;
-            font-size: 16px;
-        }
-
-        .main {
-            font-family: 'FenomenSans';
-            text-align: center; 
-            padding: 20px;
-            background-color: #0B4282;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .main h1,h2,p {
-            color: #ffff;
-        }
-
-        .main p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .tblekstra {
-            color: #ffff;
-        text-align: center; 
-        }
-
-        .tblekstra table {
-            
-            margin: auto;
-            border-collapse: collapse; 
-        }
-
-        .daftarekstra img{
-
-            width: 300px;
-            height: 200px;
-
-        }
-
-        .daftarekstra {
-            margin-top: 32px;
-        }
-
-    </style>
 </head>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #28476A;
+    text-align: center;
+}
+
+
+.navbar {
+    background-color: #4C4C4C;
+    color: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.header {
+    padding: 20px;
+    background-color: #28476A;
+    color: white;
+}
+
+
+.tblekstra table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tblekstra th, .tblekstra td {
+    border: 3px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.info {
+    color: aliceblue;
+}
+
+.info p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.info img{
+    padding-top: 40px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 190px;
+}
+
+
+</style>
+
 <body>
+
     <div class="navbar">
-        <div style="color: white; font-size: 20px;">SMK Negeri 1 Sukawati | Ekstra</div>
+        <div style="font-size: 20px;">SMK Negeri 1 Sukawati | Ekstra</div>
         <div>
             <a href="#">Home</a>
             <a href="#">Daftar</a>
@@ -101,67 +83,73 @@
         </div>
     </div>
 
-    <div class="main">
-        <h1>EKSTRA KULIKULER</h1>
+    <div class="header">
+        <h1>EKSTRAKURIKULER</h1>
         <h2>SMK Negeri 1 Sukawati</h2>
-        <br>
-        <p>Ekstrakurikuler adalah kegiatan di luar jam pelajaran sekolah yang bertujuan untuk mengembangkan 
-            minat, bakat, keterampilan, dan kepribadian siswa. Kegiatan ini biasanya bersifat non-akademis 
-            dan dilakukan di bawah bimbingan guru atau pelatih yang berpengalaman.</p>
-        
-            <br>
-            <br>
-            <br>
-
-        <div class="tblekstra">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Nama Ekstra</th>
-                        <th>Jadwal Hari Ekstra</th>
-                        <th>Jumlah Anggota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pramuka</td>
-                        <td>Jumat</td>
-                        <td>40</td>
-                    </tr>
-                    <tr>
-                        <td>Paskibra</td>
-                        <td>Sabtu</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Basket</td>
-                        <td>Senin & Rabu</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Volly</td>
-                        <td>Selasa & Kamis</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Teater</td>
-                        <td>Minggu</td>
-                        <td>15</td>
-                    </tr>
-                </tbody>
-            </table>
-  
-        </div>
-
-        <div class="daftarekstra">
-
-        <img src="gambar1.png" alt="Contoh Gambar" align="left">
         <p>
-            Ini adalah contoh paragraf yang berada di samping gambar. Kamu dapat menulis teks sepanjang yang kamu inginkan di sini. Atribut <code>align="left"</code> membuat gambar berada di kiri dan teks di sebelah kanannya. Namun, cara ini sudah usang dan tidak disarankan digunakan lagi.
+            Ekstrakurikuler adalah kegiatan di luar jam pelajaran sekolah yang bertujuan untuk mengembangkan 
+            minat, bakat, keterampilan, dan kepribadian siswa.
         </p>
-
-        </div>
-
     </div>
+
+    <!-- Tabel -->
+    <div class="tblekstra">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Ekstra</th>
+                    <th>Jadwal Hari Ekstra</th>
+                    <th>Jumlah Anggota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pramuka</td>
+                    <td>Jumat</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Podcast</td>
+                    <td>Jumat</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Catur</td>
+                    <td>Jumat/Sabtu</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Renang</td>
+                    <td>Sabtu/Minggu</td>
+                    <td>60</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info">
+            <img src="pramuka.jpeg" alt="">
+            <h2>Pramuka</h2>
+            <p>Ekstrakurikuler Pramuka adalah kegiatan di sekolah yang bertujuan untuk mengembangkan karakter, keterampilan, dan kecakapan hidup peserta didik. </p>
+            <hr>
+        </div>
+        <div class="info">
+            <img src="chess.jpeg" alt="">
+            <h2>Catur</h2>
+            <p>Ekstrakulikuler Catur merupakan salah satu kegiatan yang mangakomodir siswa yang mempunyai minat dalam bidang catur. Kegiatan ini diharapkan dapat memberikan pengalaman yang lebih terhadap siswa dengan melakukan permainan sparing antar siswa.</p>
+            <hr>
+        </div>
+        <div class="info">
+            <img src="IMG-20241125-WA0038.jpg" alt="">
+            <h2>Podcast</h2>
+            <p>Podcast adalah ekstra yang melatih kita untuk berani tampil di depan umum, dan belajar menjadi Jurnalis</p>
+            <hr>
+        </div>
+        <div class="info">
+            <img src="renang.jpeg" alt="">
+            <h2>Renang</h2>
+            <p>Ekstrakulikuler renang bukan hanya tentang belajar berenang dengan baik, tetapi juga tentang kebugaran dan kesehatan. Siswa-siswa kami menghargai pentingnya menjaga tubuh mereka tetap aktif dan sehat melalui olahraga renang.</p>
+            <hr>
+        </div>
+    </div>
+
 </body>
 </html>
