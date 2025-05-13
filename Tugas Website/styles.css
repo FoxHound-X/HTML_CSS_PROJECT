@@ -9,6 +9,39 @@
   box-sizing: border-box;
 }
 
+.navbarweb{
+  background-color: #565c63
+  ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.iconnav{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.linknavbar{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.linknavbar a{
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: bacgound 0.4s;
+}
+
+.linknavbar a:hover{
+  background-color: #f5f5f55e;
+    border-radius: 4px;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -49,7 +82,7 @@ html, body {
 .categories {
     padding: 50px 20px;
     text-align: center;
-    background-color: #3e5c76;
+    background-color: #98a0a2;
   }
   
   .category-cards {
@@ -74,7 +107,7 @@ html, body {
   }
   
   .place-to-be {
-    background-color: #f0f0f0;
+    background-color: #98a0a2;
     padding: 50px 20px;
   }
   
